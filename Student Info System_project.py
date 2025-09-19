@@ -29,7 +29,7 @@ def validate_student_id(student_id):
     - Minimum and maximum length constraints
     """
     if not student_id:
-        return False, "Student ID cannot be empty"
+        return False, "Student ID cannot be empty. Please add an ID"
     
     if len(student_id) < 5 or len(student_id) > 10:
         return False, "Student ID must be between 5 and 10 characters"
